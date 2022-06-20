@@ -1,0 +1,22 @@
+MOV A 5
+D0 05
+MOV B 0
+D1 00
+MOV C 1
+D2 01
+MOV D A (Uložit A, provádí se na něm výpočty)
+98
+MOV A C (C do A)
+82
+A+B (A je teď 0 + 1)
+41
+MOV B C
+8a
+MOV C A
+90
+MOV A D
+83
+A--
+58
+JNZ (A není 0, zpět na MOV D A)
+E1 06
